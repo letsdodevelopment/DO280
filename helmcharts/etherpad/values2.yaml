@@ -1,0 +1,7 @@
+image:
+  repository: etherpad
+  name: etherpad
+  tag: latest
+  pullPolicy: IfNotPresent
+route:
+  host: development.apps-crc.testing
