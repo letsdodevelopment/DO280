@@ -1,3 +1,4 @@
+# you cannot create pvc using command line, you should create yaml manifest
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
