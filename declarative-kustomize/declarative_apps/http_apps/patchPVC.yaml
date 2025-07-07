@@ -1,0 +1,12 @@
+spec:
+  template:
+    spec:
+      containers:
+        - name: httpd-24
+          volumeMounts:
+            - mountPath: /var/www/html
+              name: htmlwww
+      volumes:
+        - name: htmlwww
+          persistentVolumeClaim:
+            claimName: mypvc
