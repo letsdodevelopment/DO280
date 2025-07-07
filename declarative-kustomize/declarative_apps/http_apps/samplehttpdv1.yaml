@@ -9,7 +9,7 @@ metadata:
   labels:
     app: samplehttpd
   name: samplehttpd
-  namespace: deploy-apps
+  namespace: declar-ex
 spec:
   progressDeadlineSeconds: 600
   replicas: 3
