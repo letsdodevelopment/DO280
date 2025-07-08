@@ -20,3 +20,6 @@ patches:
 
 resources:
   - ../../base
+
+# If the value ends with whitespace, like a newline, YAML will preserve it.
+# To strip the character, use the strip operator. |-
