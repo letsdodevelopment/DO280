@@ -10,7 +10,7 @@ metadata:
     app: httpd24-app
   name: httpd24-app
 spec:
-  replicas: 6
+  replicas: 3
   selector:
     matchLabels:
       app: httpd24-app
