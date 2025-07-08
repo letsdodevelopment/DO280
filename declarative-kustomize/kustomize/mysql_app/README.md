@@ -16,4 +16,4 @@ e.g. testing folder, you will see `kustomization.yaml` file which is just creati
 on the other hand, Production folder has a secret, which is very specific to production environment.
 
 In short, this is very basic example of kustomization, no patching is involved here. But the idea is, if you wish to have separate secret for the environment,
-you must create them in the kustomization file in respective environment. You should NOT add or create this part in main kustomization.yaml file which is under base folder.qq
+you must create them in the kustomization file in respective environment. You should NOT add or create this part in main kustomization.yaml file which is under base folder.
