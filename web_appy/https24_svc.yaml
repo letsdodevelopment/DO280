@@ -1,6 +1,8 @@
 apiVersion: v1
 metadata:
   name: httpd24-svc
+  labels:
+    app: httpd24-app
 kind: Service
 spec:
   ports:

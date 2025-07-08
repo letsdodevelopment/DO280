@@ -2,6 +2,8 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: httpd24-rt
+  labels:
+    app: httpd24-app
 spec:
   host: myhttpd.apps-crc.testing
   port:
