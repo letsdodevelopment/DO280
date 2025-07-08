@@ -1,5 +1,8 @@
 kind: Kustomization
 namespace: test-apps
+namePrefix: testsql-
+commonLabels:
+  env: testing
 resources:
   - ../../base
 secretGenerator:
