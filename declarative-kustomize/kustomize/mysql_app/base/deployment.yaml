@@ -34,9 +34,9 @@ spec:
                 name: mysqlsecret
           - name: MYSQL_DATABASE
             valueFrom:
-              secretKeyRef:
+              configMapKeyRef:
                 key: DB_DATABASE
-                name: mysqlsecret
+                name: databaseinfo
         name: mysql-80
         image: registry.redhat.io/rhel9/mysql-80
         resources: {}

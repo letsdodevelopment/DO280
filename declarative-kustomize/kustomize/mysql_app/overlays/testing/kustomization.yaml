@@ -1,11 +1,15 @@
 kind: Kustomization
-namespace: test-apps
+namespace: sampleapp
 resources:
   - ../../base
 secretGenerator:
   - name: mysqlsecret
-    behavior: merge
+    behavior: replace
     literals:
       - DB_USER="testdbadmin"
       - DB_PASSWORD="testpassit"
-      - DB_DATABASE="testitemsx"
+configMapGenerator:
+  - name: databaseinfo
+    behavior: replace
+    literals:
+      - DB_DATABASE=itemx

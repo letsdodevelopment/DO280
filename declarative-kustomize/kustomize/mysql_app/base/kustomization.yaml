@@ -6,4 +6,7 @@ secretGenerator:
     literals:
       - DB_USER="dbadmin"
       - DB_PASSWORD="passit"
+configMapGenerator:
+  - name: databaseinfo
+    literals:
       - DB_DATABASE="itemsx"

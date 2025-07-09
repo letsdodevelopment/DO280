@@ -5,7 +5,7 @@ The folder structure is as per kustomize recommendation.
 
 ## Base
 
-This folder has all files which all not change irrespective of your environment. But it cannot work independly because it is needs secrets which is defined in individual folder.
+This folder has all files which all not change irrespective of your environment. But it cannot work independtly because it is needs secrets which is defined in individual folder.
 There should be no patches in the base folder, so that the content can be considered to be an untainted set of files to which patches can be applied by overlays.
 Namespaces should NOT be directly referenced in base assets such that the content can be applied to any namespace.
 
@@ -16,4 +16,5 @@ e.g. testing folder, you will see `kustomization.yaml` file which is just creati
 on the other hand, Production folder has a secret, which is very specific to production environment.
 
 In short, this is very basic example of kustomization, no patching is involved here. But the idea is, if you wish to have separate secret for the environment,
-you must create them in the kustomization file in respective environment. You should NOT add or create this part in main kustomization.yaml file which is under base folder.qq
+you must create them in the kustomization file in respective environment. You should can add or create this part (i.e. secret) in main kustomization.yaml file which is under base folder.
+But then, one should ensure it is merged or delete using  `behavior: merge or replace`
