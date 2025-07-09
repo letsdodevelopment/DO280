@@ -1,0 +1,14 @@
+kind: Kustomization
+namespace: sampleapp
+namePrefix: v1-
+commonLabels:
+  env: testing
+resources:
+  - ../../base
+patches:
+  - path: patch.yaml
+    target:
+      kind: Deployment
+      name: httpd24-app
+    options:
+      allowNameChange: true
